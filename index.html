@@ -2,13 +2,185 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Digi/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Digi/assets/box-BAg3qQGa.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/Digi/assets/index-i38AVOVt.js"></script>
-    <link rel="stylesheet" crossorigin href="/Digi/assets/index-BfibREyH.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Digi</title>
+    <script type="module" crossorigin src="/Digi/assets/index-CoIGMClT.js"></script>
+    <link rel="stylesheet" crossorigin href="/Digi/assets/index-CugpOwwW.css">
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="header__logo">
+        <img class="logo__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVHgB7ZNBCsIwEEX/ZK1Qb+BVPEJP4BWsvUC7L1hPUjyRPUIWFRfajJlKNUIJ1GThwg8Dk0/mTZIhlJ+uW5i+BpDgK1ELpQrKm8sZ4DXCpFUEiChRiKQ/6BdBDLQELueBmI9DvA1tcNtU6bL49D0g6dzTvZCQXDwClXW6GnLX94CenW2RlpBcrlOli3rcMfo21W6l/WsdvxZA5hb5tG+6nd1/mASFKOr4NQIlj68YJpuawgyMHKR8AJlaU7Le4I7yAAAAAElFTkSuQmCC" alt="Логотип">
+        <p class="header__name">Логотип</p>
+      </div>
+      <a class="header__catalog">Каталог</a>
+      <input class="header__input" type="text" placeholder="Поиск по 100 000 товаров">
+      <nav class="header__list">
+        <ul>
+          <li class="header__item"><a href="#">Информация о компании</a></li>
+          <li class="header__item"><a href="#">Контакты</a></li>
+          <li class="header__item"><a href="#">Полезные ссылки</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1>Магазин очень нужных товаров</h1>
+      <form class="filter">
+        <fieldset class="filter__category">
+          <ul class="category__list">
+            <li class="category__item category__item_main">Название категории
+              <span class="category__count">3</span>
+            </li>
+            <li class="category__item">Название категории
+              <span class="category__count">3</span>
+            </li>
+            <li class="category__item">Название категории
+              <span class="category__count">3</span>
+            </li>
+            <li class="category__item">Название категории
+              <span class="category__count">3</span>
+            </li>
+          </ul>
+
+        </fieldset>
+        <fieldset class="filter__price">
+          <legend class="price__legend">Цена</legend>
+          <input class="price__input price__input_left" type="text" placeholder="5 500 P">
+          <div class="price_dash"> - </div>
+          <input class="price__input" type="text" placeholder="5 500 P">
+        </fieldset>
+        <fieldset class="filter__brand">
+          <div class="brand__wrap">
+            <legend class="brand__legend">Бренд</legend>
+            <button class="brand__button" type="button">Очистить</button>
+          </div>
+        <input class="brand__input" type="text" placeholder="Поиск">
+        <ul class="brand__list">
+          <li class="brand__item">
+            <div class="brand__checkbox">
+              <div class="checkbox__wrap">
+                <input class="checkbox__input" type="checkbox" checked>
+                <span class="checkbox__title">Атрибут</span>
+              </div>
+              <span class="checkbox__count">3</span>
+            </div>
+          </li>
+          <li class="brand__item">
+            <div class="brand__checkbox">
+              <div class="checkbox__wrap">
+                <input class="checkbox__input" type="checkbox">
+                <span class="checkbox__title">Атрибут</span>
+              </div>
+            <span class="checkbox__count">3</span>
+            </div>
+          </li>
+          <li class="brand__item">
+            <div class="brand__checkbox">
+              <div class="checkbox__wrap">
+                <input class="checkbox__input" type="checkbox">
+                <span class="checkbox__title">Атрибут</span>
+              </div>
+            <span class="checkbox__count">3</span>
+            </div>
+          </li>
+          <li class="brand__item">
+            <div class="brand__checkbox">
+              <div class="checkbox__wrap">
+                <input class="checkbox__input" type="checkbox" >
+                <span class="checkbox__title">Атрибут</span>
+              </div>
+            <span class="checkbox__count">3</span>
+            </div>
+          </li>
+          <li class="brand__item">
+            <div class="brand__checkbox">
+              <div class="checkbox__wrap">
+                <input class="checkbox__input" type="checkbox">
+                <span class="checkbox__title">Атрибут</span>
+              </div>
+            <span class="checkbox__count">3</span>
+            </div>
+          </li>
+          <li class="brand__item">
+            <div class="brand__checkbox">
+              <div class="checkbox__wrap">
+                <input class="checkbox__input" type="checkbox">
+                <span class="checkbox__title">Атрибут</span>
+              </div>
+            <span class="checkbox__count">3</span>
+            </div>
+          </li>
+        </ul>
+        </fieldset>
+        <fieldset class="filter__size">
+          <legend class="size__legend">Размер</legend>
+          <ul class="size__list">
+            <li class="size__item">
+              <div class="size__checkbox">
+                <div class="checkbox__wrap">
+                  <input class="checkbox__input" type="checkbox" checked>
+                  <span class="checkbox__title">Атрибут</span>
+                </div>
+                <span class="checkbox__count">3</span>
+              </div>
+            </li>
+            <li class="size__item">
+              <div class="size__checkbox">
+                <div class="checkbox__wrap">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__title">Атрибут</span>
+                </div>
+              <span class="checkbox__count">3</span>
+              </div>
+            </li>
+            <li class="size__item">
+              <div class="size__checkbox">
+                <div class="checkbox__wrap">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__title">Атрибут</span>
+                </div>
+              <span class="checkbox__count">3</span>
+              </div>
+            </li>
+            <li class="size__item">
+              <div class="size__checkbox">
+                <div class="checkbox__wrap">
+                  <input class="checkbox__input" type="checkbox" >
+                  <span class="checkbox__title">Атрибут</span>
+                </div>
+              <span class="checkbox__count">3</span>
+              </div>
+            </li>
+            <li class="size__item">
+              <div class="size__checkbox">
+                <div class="checkbox__wrap">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__title">Атрибут</span>
+                </div>
+              <span class="checkbox__count">3</span>
+              </div>
+            </li>
+            <li class="size__item">
+              <div class="size__checkbox">
+                <div class="checkbox__wrap">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__title">Атрибут</span>
+                </div>
+              <span class="checkbox__count">3</span>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        </form>
+      <div class="goods">
+      </div>
+    </main>
   </body>
 </html>
+
+
