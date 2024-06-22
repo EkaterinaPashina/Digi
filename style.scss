@@ -1,0 +1,328 @@
+$pointer : pointer;
+$blue: #73AFF4;
+$black: #000;
+$white: #fff;
+$light-gray : #AAAAAA;
+$light-blue: #e2efff;
+
+@mixin FlexSB {
+    display:flex;
+    justify-content: space-between;
+}
+
+@mixin AlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+
+@mixin InterFont {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin PTSans {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    @include InterFont();
+    max-width: 1720px;
+    @include AlignCenter();
+    justify-content: center;
+    margin: auto;
+    gap:20px;
+
+
+    &__logo {
+        @include AlignCenter();
+        gap: 10px;
+        cursor: $pointer;
+    }
+
+    &__name {
+        line-height: 19.36px;
+    }
+
+    &__catalog {
+        color: $black;
+        border: 1px solid $blue;
+        border-radius: 5px;
+        padding: 12px 19px;
+        margin-left: 5px;
+        cursor: $pointer;
+        font-size: 14px;
+        line-height: 16.94px;
+    }
+
+    &__catalog:hover {
+        background-color: $blue;
+        color: $white;
+    }
+
+    & ul {
+        font-size: 14px;
+        display: flex;
+        gap: 20px;
+        padding-left: 0;
+    }
+
+    &__input {
+        @include InterFont();
+        color: #5A5A5A;
+        padding: 12px 15px 12px 40px;
+        border: 1px solid $blue;
+        border-radius: 10px;
+        width: 52%;
+    }
+
+    &__item {
+        line-height: 16.94px;
+    }
+
+    &__item:hover {
+        box-shadow: 0px 5px 1px rgba(99, 99, 99, 0.17);;
+    }
+}
+
+.logo__img {
+    width: 18px;
+    height: 18px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #393939;
+}
+
+.main {
+    max-width: 1720px;
+    margin: auto;
+} 
+
+h1 {
+    font-size: 1px;
+    visibility: hidden;
+}
+
+
+.category {
+    &__list {
+        max-width: 280px;
+        padding-left: 0;
+        padding-right: 33px;
+    }
+
+    &__item {
+        @include PTSans();
+        padding-left: 25px;
+        @include FlexSB();
+        font-size: 14px;
+        padding-top: 8px;
+        padding-bottom: 6px;
+        line-height: 16px;
+        color: #333333;
+    
+        &_main {
+            padding-left: 0px;
+            padding-top: 16px;
+        }
+    }
+
+    &__item:hover {
+        cursor: $pointer;
+        background-color:$light-blue;
+    }
+
+    &__count {
+        color: $light-gray;
+    }
+
+    &__count:hover {
+        color: $black;
+    }
+}
+
+.filter {
+    width: 280px;
+    margin-left: 40px;
+
+    &__price {
+        @include FlexSB();
+        align-items: center;
+        position: relative;
+        line-height: 20px;
+        box-sizing: border-box;
+        padding-right: 14px;
+    }
+
+    &__price::before {
+        content: "от";
+        position: absolute;
+        color: #d5d5d5;
+        top: 12px;
+        left: 12px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &__price::after {
+        content: "до";
+        position: absolute;
+        color: #d5d5d5;
+        top: 12px;
+        right: 110px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &__brand {
+        margin-top: 20px;
+        padding-right: 18px;
+    }
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    @include PTSans();
+    text-align: center;
+    font-weight: 700;
+    padding-top: 12px;
+}
+
+.brand {
+    &__legend {
+        text-align: left;
+        padding-top: 0;
+    }
+
+    &__button {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        text-decoration: underline;
+        color: $light-gray;
+        cursor: $pointer;
+        @include PTSans();
+        font-size: 12px;
+        line-height: 12px;
+        padding-right: 15px;
+    }
+
+    &__wrap {
+        @include FlexSB();
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        display: block;
+        width: 95%;
+        box-sizing: border-box;
+        padding: 8px 10px 8px 30px;
+        border: 1px solid #d5d5d5;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        @include PTSans();
+        font-size: 14px;
+        line-height: 16px;
+        color: $light-gray;
+    }
+
+    &__list {
+        margin-top: 0;
+        width: 280px;
+        padding-left: 0;
+        padding-right: 30px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    &__checkbox {
+        @include FlexSB();
+    }
+
+    &__item {
+        padding: 5px 0;
+        @include PTSans();
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__item:hover {
+        background-color: $light-blue;
+    }
+
+}
+
+.price {
+    &__input {
+        box-sizing: border-box;
+        width: 119px;
+        padding: 10px 8px 10px 26px;
+        border-radius: 4px;
+        border: solid 0.5px $light-gray;
+        font-size: 14px;
+        line-height: 16px;
+    }
+        &_left {
+            padding-left: 30px;
+        }
+    &__legend {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.checkbox {
+    &__input {
+        transform: scale(1.5);
+        cursor: $pointer;
+    }
+    &__count {
+        color: $light-gray;
+        cursor: $pointer;
+    }
+    &__count:hover {
+        color: $black;
+    }
+}
+
+.size {
+    &__list {
+        margin-top: 0;
+        width: 280px;
+        padding-left: 0;
+        padding-right: 30px;
+        padding-top: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    &__item {
+        padding: 5px 0;
+        @include PTSans();
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__item:hover {
+        background-color: $light-blue;
+    }
+
+    &__checkbox {
+        @include FlexSB();
+    }
+}
