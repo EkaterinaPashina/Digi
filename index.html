@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Digi</title>
-    <script type="module" crossorigin src="/Digi/assets/index-CoIGMClT.js"></script>
-    <link rel="stylesheet" crossorigin href="/Digi/assets/index-CugpOwwW.css">
+    <script type="module" crossorigin src="/Digi/assets/index-CXKc3fN6.js"></script>
+    <link rel="stylesheet" crossorigin href="/Digi/assets/index-BVPSBacW.css">
   </head>
   <body>
     <header class="header">
@@ -20,6 +20,7 @@
       </div>
       <a class="header__catalog">Каталог</a>
       <input class="header__input" type="text" placeholder="Поиск по 100 000 товаров">
+
       <nav class="header__list">
         <ul>
           <li class="header__item"><a href="#">Информация о компании</a></li>
@@ -29,7 +30,6 @@
       </nav>
     </header>
     <main class="main">
-      <h1>Магазин очень нужных товаров</h1>
       <form class="filter">
         <fieldset class="filter__category">
           <ul class="category__list">
@@ -50,9 +50,9 @@
         </fieldset>
         <fieldset class="filter__price">
           <legend class="price__legend">Цена</legend>
-          <input class="price__input price__input_left" type="text" placeholder="5 500 P">
+          <input class="price__input price__input_left" type="text" placeholder="5 500 &#8381;">
           <div class="price_dash"> - </div>
-          <input class="price__input" type="text" placeholder="5 500 P">
+          <input class="price__input" type="text" placeholder="5 500 &#8381;">
         </fieldset>
         <fieldset class="filter__brand">
           <div class="brand__wrap">
@@ -176,8 +176,180 @@
             </li>
           </ul>
         </fieldset>
-        </form>
+      </form>
+      <h1 class="display_none">Магазин очень нужных товаров</h1>
       <div class="goods">
+        <h2 class="display_none">Каталог товаров</h2>
+        <ul class="goods__cards">
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img card__img_big" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img card__img_transparent" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy_finished" href="#">Сообщить о поступлении</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+          <li class="cards__card">
+            <div class="card__picture scale">
+              <div class="card__top">Хит продаж
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBjVLLUcMwEH2SPYQbLsF0AB0okALogKSDXMMlzjCDj6QDcAXQQIg6oARcQq5hYi+7lsfxj8Q7I+1qtG9335OAf4yejcEJ8zuAyAS41EuQmvNRDQJSbEKQ/wGiG5wx3QDB20IdQUX3nhj1USi+37IzjbJKrZEdEuQI4Hs8CWbqafNZASmeLKUmBlk2VgtrtRuRphhs3pvszFEb9mFPRlKutoXczIiqfQomarGZSsDcxT02bnPvwWfpAxahA3IUWIQiboE1XelWJ3sE8dPwkrjsbuuJil7u5tzx1R2za+cFVPFOsc9uMeIngffjRqWZxm/+zkx2ksAypz1ihbjQU3eH1I2aW60iu+OHXVVphAAnjVZSpPZzJhH2h3VxGOlvZhGWNynPNnaxdP6KurVKJcUL92KVf7T9V/8A88Z/MvEzU5QAAAAASUVORK5CYII=" alt="Горящая цена">
+              </div>
+              <img class="card__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANbSURBVHgB7ZtRUtpAGMe/bxPH4HQsR/AG1Uf1ofQE2qcOZTqGE6gnsN5ATgBOB2l9KTeQmY7lsRzBI/CioJ3sdgMGaFiWTdgNGPN7inGT3b+/5DOwG4QEqV/fbhMkB4yCC4BdRNbpe3BeLu7eQUIgGKZa/ZO3N3oFC/EYGBRAPIoW8+hlqbhfA8MYCxzYpJSdIGBe8bA75OFNWtcaWMmmKoasawkc06YqWq3HDqzVpioarEcObNimKrGtKwVeik0GLUDW5UM8lLaLaF0aOGmbDHhAipWnvnNRLu90/X2NRnuLArhI4Ij/uCU5XMn6VOBl2fQYnH8p7rZkzerff1+gP655SKyPAq+CTRG+AOdN/5hRxi9t3IZoTFnHKr9k1i2orprNb41fBYtYxwygoEMAAWz2KDu1HQvOmOGwi9jU9WREgR1ysXmbh3VheoQDC4QXCX5JHPFeCxCHkc29lqzZ2GavwKhvM2bMYWWveHzTAr/IhSo8F2v/fwR2Hh/WP4Qs1PxKyS19BYLvQV4pE7cZ9AeUNkul/c7Er5qDcRO4mRwzXv1os4nDO58/7e3IOqg32q7QetL35rPNx4dcS/aHvbpu30zWp1Dgwa4Oox43tNGUnSiwzgDvDFfaERKbU/2t5e5dQqyDcDEWBB6fnCA26V9akZ1cRtI2/f7WyNqBB9Sd1d/MwKFmStYD6o1b/mTkPyAs16YIxcDjQahan3mvz+9Em00RkQKHDo10r8sqvCmbwlHHDzxkIeuGbYpYOHDodMrWKaV50zaFI9QbeMgiFV6nTRFGAoe6mGvdlE3haMwHHhJY7987p0Hw6s+bfO4pd2bKpggCCeEH8j+obG6yt8E+p+/k+aeYRL8bSyzwqpAFTjtZ4LSTBU47WeC0kwVOO1ngtJMFTjtZ4LSTBU47rzAw8m//XwnIoEbQgzLfbELa8ad1+IS9XRwu5/kYZVnDS0E0STda4/Ec3PW3Y091rgrPk3RPgkk6W9S+VNytQcTFLMtGdcrVlp3kRViX2BRhgyKrZF3VpgjlwAFLtR7RpggtK/uiWOf/+C96lFWg73TXNx7PeIoTWftFbIrQ/laLNuuKyyGiYuw1njj3um6bIoy/qOUz17ohmyISCRwwtg7vgA0myC9N2hTxD7ER6o/+fH2YAAAAAElFTkSuQmCC" alt="Изображение товара">
+              <p class="card__sale">25%</p>
+            </div>
+            <h3 class="card__brand">Бренд</h3>
+            <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+            <p class="card__price">5 990 &#8381; <span class="card__price_old"> 5 990 &#8381;</span></p>
+            
+            <button class="card__buy" href="#">Купить</button>
+          </li>
+        </ul>
       </div>
     </main>
   </body>
