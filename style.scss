@@ -15,7 +15,6 @@ $light-blue: #e2efff;
     align-items: center;
 }
 
-
 @mixin InterFont {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -28,11 +27,51 @@ $light-blue: #e2efff;
     font-style: normal;
 }
 
+@mixin PTSans14_16 {
+    @include PTSans();
+        font-size: 14px;
+        line-height: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #393939;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    @include PTSans();
+    text-align: center;
+    font-weight: 700;
+    padding-top: 12px;
+}
+
+.main {
+    max-width: 1720px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+} 
+
+.display_none {
+    display: none;
+}
+
 .header {
     @include InterFont();
     max-width: 1720px;
     @include AlignCenter();
-    justify-content: center;
+    justify-content: start;
     margin: auto;
     gap:20px;
 
@@ -56,6 +95,7 @@ $light-blue: #e2efff;
         cursor: $pointer;
         font-size: 14px;
         line-height: 16.94px;
+        margin:0;
     }
 
     &__catalog:hover {
@@ -66,8 +106,14 @@ $light-blue: #e2efff;
     & ul {
         font-size: 14px;
         display: flex;
-        gap: 20px;
+        gap: 13px;
         padding-left: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        width:400px;
     }
 
     &__input {
@@ -76,7 +122,8 @@ $light-blue: #e2efff;
         padding: 12px 15px 12px 40px;
         border: 1px solid $blue;
         border-radius: 10px;
-        width: 52%;
+        width: 1015px;
+        background: url("src/assets/search.png") no-repeat 12px 10px;
     }
 
     &__item {
@@ -91,27 +138,8 @@ $light-blue: #e2efff;
 .logo__img {
     width: 18px;
     height: 18px;
+    padding-left: 15px;
 }
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: #393939;
-}
-
-.main {
-    max-width: 1720px;
-    margin: auto;
-} 
-
-h1 {
-    font-size: 1px;
-    visibility: hidden;
-}
-
 
 .category {
     &__list {
@@ -121,13 +149,11 @@ h1 {
     }
 
     &__item {
-        @include PTSans();
+        @include PTSans14_16();
         padding-left: 25px;
         @include FlexSB();
-        font-size: 14px;
         padding-top: 8px;
         padding-bottom: 6px;
-        line-height: 16px;
         color: #333333;
     
         &_main {
@@ -152,7 +178,8 @@ h1 {
 
 .filter {
     width: 280px;
-    margin-left: 40px;
+    margin-top: 10px;
+    // margin-left: 40px;
 
     &__price {
         @include FlexSB();
@@ -161,14 +188,15 @@ h1 {
         line-height: 20px;
         box-sizing: border-box;
         padding-right: 14px;
+        padding-top: 8px;
     }
 
     &__price::before {
         content: "от";
         position: absolute;
         color: #d5d5d5;
-        top: 12px;
-        left: 12px;
+        top: 20px;
+        left: 10px;
         font-size: 12px;
         line-height: 14px;
     }
@@ -177,7 +205,7 @@ h1 {
         content: "до";
         position: absolute;
         color: #d5d5d5;
-        top: 12px;
+        top: 19px;
         right: 110px;
         font-size: 12px;
         line-height: 14px;
@@ -187,19 +215,6 @@ h1 {
         margin-top: 20px;
         padding-right: 18px;
     }
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-legend {
-    @include PTSans();
-    text-align: center;
-    font-weight: 700;
-    padding-top: 12px;
 }
 
 .brand {
@@ -235,10 +250,9 @@ legend {
         border: 1px solid #d5d5d5;
         border-radius: 4px;
         margin-bottom: 10px;
-        @include PTSans();
-        font-size: 14px;
-        line-height: 16px;
+        @include PTSans14_16();
         color: $light-gray;
+        background: url("src/assets/search-small.png") no-repeat 9px 8px;
     }
 
     &__list {
@@ -256,9 +270,7 @@ legend {
 
     &__item {
         padding: 5px 0;
-        @include PTSans();
-        font-size: 14px;
-        line-height: 16px;
+        @include PTSans14_16();
     }
 
     &__item:hover {
@@ -274,8 +286,7 @@ legend {
         padding: 10px 8px 10px 26px;
         border-radius: 4px;
         border: solid 0.5px $light-gray;
-        font-size: 14px;
-        line-height: 16px;
+        @include PTSans14_16();
     }
         &_left {
             padding-left: 30px;
@@ -313,9 +324,7 @@ legend {
 
     &__item {
         padding: 5px 0;
-        @include PTSans();
-        font-size: 14px;
-        line-height: 16px;
+        @include PTSans14_16();
     }
 
     &__item:hover {
@@ -325,4 +334,142 @@ legend {
     &__checkbox {
         @include FlexSB();
     }
+}
+
+.goods {
+    box-sizing: border-box;
+    width: 1404px;
+    margin-top: 30px;
+
+    &__cards {
+        padding-left: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+    }
+}
+
+.cards {
+    &__item {
+        width: 333px;
+    }
+
+    &__card {
+        width: 333px;
+    }
+}
+
+.card {
+    box-sizing: border-box;
+
+    &__picture {
+        width: 333px;
+        height: 190px;
+        background-color: #f8f8fa;
+        margin-bottom: 12px;
+        position: relative;
+    }
+
+    &__buy {
+        @include PTSans();
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #7397F5;
+        border: 1px solid #7397F5;
+        padding: 8px 15px;
+        border-radius: 4px;
+        background-color: transparent;
+        cursor: $pointer;
+
+        &_finished {
+            width: 100%;
+            padding: 8px;
+            background-color: transparent;
+            border: 1px solid $light-gray;
+            @include PTSans();
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            color: $light-gray;
+            cursor: $pointer;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        left: 40%;
+        top: 38%;
+
+        &_big {
+            transform: scale(1.5);
+        }
+
+        &_transparent {
+            opacity: 0.5;
+        }
+    }
+
+    &__brand {
+        @include PTSans14_16();
+        color: $light-gray;
+        margin-bottom: 10px;
+    }
+
+    &__description{
+        width: 333px;
+        @include PTSans14_16();
+        margin-top: 0px;
+    }
+
+    &__price {
+        @include PTSans();
+        font-weight: 700;
+    }
+
+    &__price_old {
+        @include PTSans();
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration: line-through;
+        color: $light-gray;
+    }
+
+    &__top {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 4px 10px;
+        border: 1px transparent solid;
+        border-radius: 4px;
+        background-color: $white;
+        @include PTSans14_16();
+    }
+
+    &__sale {
+        margin: 0;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: $blue;
+        color: $white;
+        @include PTSans();
+        font-weight: 700;
+        line-height: 14px; 
+        font-size: 14px;
+        padding: 5px 7px;
+        border: 1px transparent solid;
+        border-radius: 4px;
+    }
+}
+
+.scale {
+    transition: 1s; 
+}
+
+.scale:hover {
+    transform: scale(1.1); 
 }
