@@ -33,6 +33,10 @@ $light-blue: #e2efff;
         line-height: 16px;
 }
 
+body {
+    max-width: 1720px;
+}
+
 li {
     list-style-type: none;
 }
@@ -40,6 +44,10 @@ li {
 a {
     text-decoration: none;
     color: #393939;
+}
+
+.display_none {
+    display: none;
 }
 
 fieldset {
@@ -57,22 +65,17 @@ legend {
 
 .main {
     max-width: 1720px;
-    margin: auto;
     display: grid;
     grid-template-columns: 280px 1fr;
     gap: 30px;
+    margin-bottom: 20px;
 } 
-
-.display_none {
-    display: none;
-}
 
 .header {
     @include InterFont();
     max-width: 1720px;
     @include AlignCenter();
     justify-content: start;
-    margin: auto;
     gap:20px;
 
 
@@ -84,6 +87,10 @@ legend {
 
     &__name {
         line-height: 19.36px;
+    }
+
+    &__search {
+        display: none;
     }
 
     &__catalog {
@@ -116,7 +123,7 @@ legend {
         width:400px;
     }
 
-    &__input {
+    &__input_high {
         @include InterFont();
         color: #5A5A5A;
         padding: 12px 15px 12px 40px;
@@ -124,6 +131,14 @@ legend {
         border-radius: 10px;
         width: 1015px;
         background: url("src/assets/search.png") no-repeat 12px 10px;
+    }
+
+    &__input_small {
+        display: none;
+    }
+
+    &__exit {
+        display: none;
     }
 
     &__item {
@@ -349,6 +364,10 @@ legend {
         column-gap: 24px;
         row-gap: 24px;
     }
+
+    &__name {
+        display: none;
+    }
 }
 
 .cards {
@@ -472,4 +491,156 @@ legend {
 
 .scale:hover {
     transform: scale(1.1); 
+}
+
+@media (max-width: 1441px) {
+
+    body {
+        max-width: 1440px;
+    }
+
+    .header {
+        @include InterFont();
+        max-width: 1240px;
+
+
+        &__input_high {
+            width: 479px;
+        }
+    }
+
+    .main {
+        max-width: 1240px;
+        grid-template-columns: 280px 924px;
+    }
+
+    .goods__cards {
+        width: 924px;
+    }
+
+    .cards__card {
+        width: 213px;
+    }
+
+    .card {
+        &__picture {
+            width: 213px;
+        }
+
+        &__description {
+            width: 213px;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+
+    .main {
+        display: block;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .header {
+        position: relative;
+
+        &__logo {
+            display:none;
+        }
+
+        &__catalog {
+            display:none;
+        }
+
+        &__list {
+            display:none;
+        }
+
+        &__input_small {
+            display: block;
+            @include InterFont();
+            color: #5A5A5A;
+            padding: 12px 15px 12px 40px;
+            border: none;
+            border-bottom: 1px solid $light-gray;
+            width: 375px;
+            background: url("src/assets/arrow.png") no-repeat 12px 10px;
+        }
+
+        &__exit {
+            display: block;
+            position: absolute;
+            right: 85px;
+        }
+
+        &__input_high {
+            display: none;
+        }
+
+        &__search {
+            display: block;
+            background-color: #73AFF4;
+            color: #fff;
+            @include PTSans();
+            line-height: 14px;
+            font-size: 14px;
+            padding: 5px 7px;
+            border: 1px transparent solid;
+            border-radius: 4px;
+            position: absolute;
+            right: 15px;
+            cursor: $pointer;
+        }
+    }
+
+    .goods {
+        max-width: 344px;
+        margin-top: 10px;
+
+        &__name {
+            display: block;
+            @include PTSans();
+            font-size: 22px;
+            line-height: 28px;
+            margin-top: 0;
+            max-width: 300px;
+        } 
+
+        &__cards {
+            gap: 12px;
+            grid-template-columns: 165.5px 165.5px;
+            max-width: 374px;
+        }
+    }
+
+    .card {
+        &__picture {
+            width: 165.5px;
+        }
+
+        &__description {
+            width: 165.5px;
+        }
+
+        &__img {
+            left: 32%;
+        }
+
+        &__img_big {
+            transform: scale(1);
+        }
+
+        &__img_transparent {
+            opacity: 1;
+        }
+    }
+
+    .cards {
+
+        &__card {
+            width: 165.5px;
+        }
+    }
 }

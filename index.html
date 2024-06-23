@@ -18,8 +18,10 @@
         <p class="header__name">Логотип</p>
       </div>
       <a class="header__catalog">Каталог</a>
-      <input class="header__input" type="text" placeholder="Поиск по 100 000 товаров">
-
+      <input class="header__input_high" type="text" placeholder="Поиск по 100 000 товаров">
+      <input class="header__input_small" type="text" placeholder="Запрос">
+      <img class="header__exit" src="src/assets/close.png" alt="Отменить">
+      <button class="header__search">Найти</button>
       <nav class="header__list">
         <ul>
           <li class="header__item"><a href="#">Информация о компании</a></li>
@@ -49,9 +51,9 @@
         </fieldset>
         <fieldset class="filter__price">
           <legend class="price__legend">Цена</legend>
-          <input class="price__input price__input_left" type="text" placeholder="5 500 &#8381;">
+          <input class="price__input price__input_left" type="number" placeholder="5 500 &#8381;">
           <div class="price_dash"> - </div>
-          <input class="price__input" type="text" placeholder="5 500 &#8381;">
+          <input class="price__input" type="number" placeholder="5 500 &#8381;">
         </fieldset>
         <fieldset class="filter__brand">
           <div class="brand__wrap">
@@ -178,7 +180,7 @@
       </form>
       <h1 class="display_none">Магазин очень нужных товаров</h1>
       <div class="goods">
-        <h2 class="display_none">Каталог товаров</h2>
+        <h2 class="goods__name">Название категории</h2>
         <ul class="goods__cards">
           <li class="cards__card">
             <div class="card__picture scale">
