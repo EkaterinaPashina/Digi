@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Digi</title>
-    <script type="module" crossorigin src="/Digi/assets/index-CXKc3fN6.js"></script>
-    <link rel="stylesheet" crossorigin href="/Digi/assets/index-BVPSBacW.css">
+    <script type="module" crossorigin src="/Digi/assets/index-Dp4kfo1B.js"></script>
+    <link rel="stylesheet" crossorigin href="/Digi/assets/index-BavPNj5p.css">
   </head>
   <body>
     <header class="header">
@@ -19,8 +19,10 @@
         <p class="header__name">Логотип</p>
       </div>
       <a class="header__catalog">Каталог</a>
-      <input class="header__input" type="text" placeholder="Поиск по 100 000 товаров">
-
+      <input class="header__input_high" type="text" placeholder="Поиск по 100 000 товаров">
+      <input class="header__input_small" type="text" placeholder="Запрос">
+      <img class="header__exit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHjSURBVHgBvVTfS8JQFL66TfxNsLBJKhoSPgx6CYdv/vMi5syCihFED/5AKRFGOVNxfWc5u87JEKIP3HaO53z3nO/cexn7Y4SCAsrlcjoej6fX6/VyBRiGMTmasF6vi9Pp9EIQhBJMif/Ptm0Lr/doNPrcbDatQMJKpSKjomsvkRdEHIlEHlqt1pj3C7yhadoZqtK8fj+EQiEJMpzn8/nJYDDYVhp2P2q1WmyxWKjsSEDWa5Joj3A+n19i1RgfjLZGXgIfn0R67xECp97EbrerS5J05/ogxz35vKSb4f1804MGAYFLfBCqTcqybIGgXygUZrDH7Xa7p6pqXhTFMtuFgJgRtPxyeg+Hw74TxSJXIGCYZI9sIiOfX6xlWWm8TKflVColsgOIxX5lTSQS9qE42vhOcRvb9Asizdw26YdK+7ymPLB3V04OPaj3bDZbYtz+I+E7nY7htglyxdVUUZQ0aczxzXRdf2I8QSaTEaCl7NqUQIn8AIh0Q6bw1dHiwJhvmSHxFa8lH+hNPOCb0bl2jS0h2luCVGdHApo+8pfEzpmlM5nL5Uy0cMICLgeACrgB3njn3iUwHA4/isXiCGdUogvAh5iIXpLJ5G2j0fj05gdesNVqVUbFEgZGe9XE1jHZf+Ib3q/JLdw0j3YAAAAASUVORK5CYII=" alt="Отменить">
+      <button class="header__search">Найти</button>
       <nav class="header__list">
         <ul>
           <li class="header__item"><a href="#">Информация о компании</a></li>
@@ -50,9 +52,9 @@
         </fieldset>
         <fieldset class="filter__price">
           <legend class="price__legend">Цена</legend>
-          <input class="price__input price__input_left" type="text" placeholder="5 500 &#8381;">
+          <input class="price__input price__input_left" type="number" placeholder="5 500 &#8381;">
           <div class="price_dash"> - </div>
-          <input class="price__input" type="text" placeholder="5 500 &#8381;">
+          <input class="price__input" type="number" placeholder="5 500 &#8381;">
         </fieldset>
         <fieldset class="filter__brand">
           <div class="brand__wrap">
@@ -179,7 +181,7 @@
       </form>
       <h1 class="display_none">Магазин очень нужных товаров</h1>
       <div class="goods">
-        <h2 class="display_none">Каталог товаров</h2>
+        <h2 class="goods__name">Название категории</h2>
         <ul class="goods__cards">
           <li class="cards__card">
             <div class="card__picture scale">
